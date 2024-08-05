@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color:white;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,247,1) 0%, rgba(255,255,255,1) 100%);
+    overflow-x: hidden;
+}
+
+.container{
+width: 1370px;
+margin: 0 auto;
+}
+
+/* Бар */
+
+.bar {
+    background: url(/img/bar.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 950px;
+    padding-top: 30px;
+}
+
+header nav {
+    margin: 0 auto;
+    width: 888px;
+    background: linear-gradient(90deg, rgba(82,62,62,0.4985643915769433) 14%, rgba(61,34,34,0.49576327112876406) 29%, rgba(72,46,46,0.5013655120251226) 69%, rgba(102,77,77,0.5013655120251226) 82%);
+    padding: 8px 120px;
+    border-radius: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+header nav ul li:not(.active) a:hover {
+    border-bottom: 4px solid #D9D9D9;
+    transition: all 100ms ease;
+}
+
+.bar .adress {
+    margin: 25px auto;
+    background-color: #664d4d33;
+    width: 630px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 12px;
+}
+
+.bar .adress p {
+    font-size: 16px;
+}
+
+.bar .bar-artema {
+    margin-top: 130px;
+}
+
+.bar .bar-artema h1 {
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.bar .bar-artema p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 130px;
+}
+
+.bar .zakaz-stol h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bar .zakaz-stol .blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+    margin: 30px auto;
+}
+
+.bar .zakaz-stol .btn {
+    padding: 11px 20px;
+    background-color: #3A2531;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+    transition: all 500ms ease;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bar .zakaz-stol .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Знаем все о коктейлях */
+
+.cocktail {
+    height: 780px;
+}
+
+.cocktail h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    padding-top: 230px;
+    margin-bottom: 60px;
+}
+
+.cocktail p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    width: 150px;
+    text-align: center;
+}
+
+.cocktail .btn {
+    padding: 12px 21px;
+    background-color: #3a2531d8;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    margin: 20px auto;
+    transition: all 500ms ease;
+    font-size: 16px;
+}
+
+.cocktail .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+} 
+
+/* Фото кафе */
+
+.bar-foto .blocks {
+    padding-top: 100px;
+}
+
+.bar-foto .blocks .bar-skidka{
+    background-color: #bda770cb;
+    padding: 0 150px;
+    margin-bottom: 25px;
+    height: 473px;
+}
+
+.bar-foto .blocks .bar-skidka h2 {
+    font-size: 40px;
+    font-weight: 600;
+    width: 230px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.bar-foto .blocks .bar-skidka h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+}
+
+.bar-foto .blocks .bar-skidka p {
+    text-align: center;
+    margin: 220px auto 0 auto;
+    width: 370px;
+    color: black;
+
+}
+
+.bar-foto .blocks .up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-foto .blocks .down {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Email */
+
+.email {
+    margin-bottom: 600px;
+}
+
+.email h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-top: 300px;
+}
+
+.email p {
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email input {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #D9D9D9;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 340px;
+}
+
+.email input::placeholder{
+    color: #505050;
+}
+
+.email .email-adress {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.email button {
+    padding: 12px 51px;
+    background-color: #3a2531d8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.email button:hover {
+    cursor: pointer;
+    background-color: #2b2026;
+}
+
+/* Карта */
+
+.map {
+    width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =====================Меню===================== */
+
+.header-menu {
+    margin-top: 30px;
+}
+
+.menu-text h3{
+    text-align: center;
+    font-weight: 700;
+    color: #000;
+    margin: 130px 0;
+}
+
+.menu h1{
+    text-align: center;
+    color: #DCC489;
+    font-size: 20px;
+    margin-bottom: 75px;
+}
+
+.menu h1::after{
+    content: '';
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.menu .coctails,
+.pivo,
+.vino {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.menu .block {
+    text-align: center;
+    width: 50%;
+    margin: 50px 0;
+}
+
+.menu .block h2 {
+    font-weight: 700;
+    color: #DCC489;
+
+}
+
+.menu .block h4 {
+    margin: 20px auto;
+    font-weight: 400;
+    color: #9D9D9D;
+    width: 270px;
+}
+
+.menu .block p {
+    font-weight: 400;
+    color: #000;
+}
+
+.menu .block h3 {
+    margin: 5px auto;
+    padding: 0 10px;
+    width: 74px;
+    background: #DCC489;
+}
+
+/* Подвал */
+
+footer {
+    background-color: #d9d9d9ec;
+    padding: 70px 0;
+    color: black;
+    font-size: 14px;
+}
+
+footer .footer-bar {
+    display: flex;
+    align-items: center;
+}
+
+footer h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer .footer-info {
+    margin-left: auto;
+    width: 220px;
+}
+
+footer .footer-info ul {
+    list-style: none;
+}
+
+footer .footer-info ul li {
+    margin-top: 40px;
+}
