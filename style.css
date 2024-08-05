@@ -35,7 +35,7 @@ margin: 0 auto;
 /* Бар */
 
 .bar {
-    background: url(/img/bar.png) no-repeat center center fixed;
+    background: url(./img/bar.png) no-repeat center center fixed;
     background-size: cover;
     height: 950px;
     padding-top: 30px;
