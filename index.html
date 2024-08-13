@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bar Artema</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./airdatepicker/air-datepicker.css">
 </head>
 <body>
     <div class="bar">
@@ -41,7 +42,7 @@
                     </select>
                 </div>
                 <div class="block">
-                    <input type="date" class="input-field calendar" name="Date" id="davaToday">
+                    <input type="text" class="input-field calendar" id="airdatepicker">
                 </div>
                 <div class="block">
                     <select class="input-field" name="" id="">
@@ -143,8 +144,13 @@
         </div>
     </footer>
     
+    <script src="./airdatepicker/air-datepicker.js"></script>
     <script>
-        document.getElementById('davaToday').valueAsDate = new Date();
+        new AirDatepicker('#airdatepicker', {
+            isMobile: true,
+            autoClose: true,
+            buttons: ['today', 'clear']
+        });
     </script>
 
 </body>
