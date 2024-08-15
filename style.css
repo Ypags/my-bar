@@ -19,6 +19,7 @@ a{
 
 img{
     max-width: 100%;
+    height: auto;
 }
 
 .wrapper{
@@ -120,6 +121,9 @@ header nav ul li:not(.active) a:hover {
 }
 
 .zakaz-stol .blocks .block .input-field{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     width: 300px;
     height: 36px;
     padding: 0 20px;
@@ -131,6 +135,12 @@ header nav ul li:not(.active) a:hover {
     border-radius: 10px;
     border: none;
     outline: none;
+}
+
+.zakaz-stol .blocks .block img {
+    position: relative;
+    left: -32px;
+    pointer-events: none;
 }
 
 .bar .zakaz-stol .btn {
@@ -404,13 +414,13 @@ header nav ul li:not(.active) a:hover {
 
 .booking-zakaz .blocks .block .input-field {
     border: 2px solid #000;
-    display: block;
 }
 
 
 .booking-zakaz .blocks label {
     color: #000;
     font-weight: 700;
+    display: block;
 }
 
 .booking-zakaz hr {
