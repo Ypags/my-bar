@@ -538,9 +538,18 @@ header nav ul li:not(.active) a:hover {
 
 footer {
     background-color: #d9d9d9ec;
-    padding: 70px 0;
+    padding: 70px 0 15px 0;
     color: black;
     font-size: 14px;
+}
+
+footer hr {
+    margin: 50px 0 15px 0;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
 }
 
 footer .footer-bar {
@@ -548,14 +557,14 @@ footer .footer-bar {
     align-items: center;
 }
 
-footer h2 {
+footer .footer-bar h2 {
     font-size: 40px;
     font-weight: 600;
 }
 
-footer h2 {
-    font-size: 40px;
-    font-weight: 600;
+footer .footer-bar h3 {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 footer .footer-info {
@@ -565,6 +574,10 @@ footer .footer-info {
 
 footer .footer-info ul {
     list-style: none;
+}
+
+footer .footer-info ul a {
+    color: #95751c;
 }
 
 footer .footer-info ul li {
