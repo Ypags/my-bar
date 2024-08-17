@@ -113,7 +113,8 @@ header nav ul li.active::after {
 }
 
 header nav ul li:not(.active) a:hover {
-    border-bottom: 4px solid #D9D9D9;
+    border-radius: 3px;
+    border-bottom: 4px solid #ffffff;
     transition: all 100ms ease;
 }
 
@@ -176,6 +177,12 @@ header nav ul li:not(.active) a:hover {
     border-radius: 10px;
     border: none;
     outline: none;
+}
+
+.zakaz-stol .blocks .block input::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #585858;
 }
 
 .zakaz-stol .blocks .block img {
@@ -254,7 +261,7 @@ header nav ul li:not(.active) a:hover {
 .bar-foto .blocks .bar-skidka{
     background-color: #bda770cb;
     padding: 0 150px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     height: 473px;
 }
 
@@ -353,21 +360,13 @@ header nav ul li:not(.active) a:hover {
     background-color: #2b2026;
 }
 
-/* Карта */
-
-.map {
-    width: 1440px;
-    display: block;
-    margin: 0 auto;
-}
-
 /* ==========================Меню========================== */
 
 .header {
     margin-top: 30px;
 }
 
-.menu-text h1{
+.menu-text{
     text-align: center;
     font-weight: 700;
     color: #000;
@@ -569,7 +568,8 @@ footer .footer-bar h3 {
 
 footer .footer-info {
     margin-left: auto;
-    width: 220px;
+    width: 15%;
+    
 }
 
 footer .footer-info ul {
