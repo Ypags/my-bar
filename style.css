@@ -73,7 +73,11 @@ margin: 0 auto;
 /* ==========================Бар========================== */
 
 .bar {
-    background: url(./img/index/bar.png) no-repeat center center fixed;
+    background: image-set(
+        url('./img/index/bar.webp') type('image/webp'),
+        url('./img/index/bar.avif') type('image/avif'),
+        url('./img/index/bar.jpg') type('image/.jpeg')
+    ) no-repeat center center fixed;
     background-size: cover;
     height: 950px;
     padding-top: 30px;
@@ -363,21 +367,22 @@ header nav ul li:not(.active) a:hover {
     margin-top: 30px;
 }
 
-.menu-text h3{
+.menu-text h1{
     text-align: center;
     font-weight: 700;
     color: #000;
     margin: 130px 0;
+    font-size: 18px;
 }
 
-.menu h1{
+.menu h2{
     text-align: center;
     color: #DCC489;
     font-size: 20px;
     margin-bottom: 75px;
 }
 
-.menu h1::after{
+.menu h2::after{
     content: '';
     display: block;
     width: 45px;
@@ -402,7 +407,7 @@ header nav ul li:not(.active) a:hover {
     margin: 50px 0;
 }
 
-.menu .block h2 {
+.menu .block h3 {
     font-weight: 700;
     color: #DCC489;
 
@@ -418,13 +423,6 @@ header nav ul li:not(.active) a:hover {
 .menu .block p {
     font-weight: 400;
     color: #000;
-}
-
-.menu .block h3 {
-    margin: 5px auto;
-    padding: 0 10px;
-    width: 74px;
-    background: #DCC489;
 }
 
 /* ==========================Бронирование========================== */
