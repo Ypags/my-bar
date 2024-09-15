@@ -15,15 +15,22 @@
         <div class="bar">
 
         <header class="container">
-            <nav>
+            <div class="menu">
+                <nav class="nav-menu">
                 <ul>
-                    <li class="active"><a href="./index.html">Главная</a></li>
-                    <li><a href="./menu.html">Меню</a></li>
-                    <li><a href="#bar-foto">О нас</a></li>
-                    <li><a href="#footer">Контакты</a></li>
-                    <li><a href="./booking.html">Бронирования</a></li>
-                </ul>
-            </nav>
+                        <li class="active"><a href="./index.html">Главная</a></li>
+                        <li><a href="./menu.html">Меню</a></li>
+                        <li><a href="#bar-foto">О нас</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                        <li><a href="./booking.html">Бронирования</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <div class="burger-menu">
+                <span></span>
+            </div>
         </header>
 
             <address class="adress container">Улица Наурызбай батыра, 52 |  открыты с 8:00-00:00</address>
@@ -162,6 +169,13 @@
     <script src="./airdatepicker/air-datepicker.js"></script>
     <script src="./airdatepicker/air-datepicker-settings.js"></script>
     <script src="./btn-up/btn-up.js"></script>
-
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active')
+            document.querySelector('body').classList.toggle('lock');
+        })
+    </script>
+    
 </body>
 </html>

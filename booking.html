@@ -10,16 +10,22 @@
 </head>
 <body>
     <div class="btn-up btn-up_hide"></div>
-        <header class="header container">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./menu.html">Меню</a></li>
-                    <li><a href=".#bar-foto">О нас</a></li>
-                    <li><a href="#footer">Контакты</a></li>
-                    <li  class="active"><a href="./booking.html">Бронирования</a></li>
-                </ul>
-            </nav>
+        <header class="container">
+            <div class="menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="./index.html">Главная</a></li>
+                        <li><a href="./menu.html">Меню</a></li>
+                        <li><a href="#bar-foto">О нас</a></li>
+                        <li><a href="#footer">Контакты</a></li>
+                        <li class="active"><a href="./booking.html">Бронирования</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <div class="burger-menu burger-menu-black">
+            <span></span>
+        </div>
         </header>
         
         <main>
@@ -150,6 +156,12 @@
     <script src="./airdatepicker/air-datepicker.js"></script>
     <script src="./airdatepicker/air-datepicker-settings.js"></script>
     <script src="./btn-up/btn-up.js"></script>
+    <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        })
+    </script>
 
 </body>
 </html>
