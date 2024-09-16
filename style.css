@@ -151,14 +151,17 @@ svg * {
         url('./img/index/bar.avif') type('image/avif'),
         url('./img/index/bar.webp') type('image/webp'),
         url('./img/index/bar.jpg') type('image/.jpeg')
-    ) no-repeat center center fixed;
+    );
+    background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 950px;
     padding-top: 1px;
 }
 
 header nav {
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: 888px;
     background: linear-gradient(90deg, rgba(82,62,62,0.4985643915769433) 14%, rgba(61,34,34,0.49576327112876406) 29%, rgba(72,46,46,0.5013655120251226) 69%, rgba(102,77,77,0.5013655120251226) 82%);
     padding: 8px 120px;
@@ -166,7 +169,6 @@ header nav {
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -302,19 +304,13 @@ header nav ul li:not(.active) a:hover {
     }
 
     header nav ul li.active::after {
-        content: '';
         display: block;
         height: 1px;
-        background-color: #fff;
-        margin: 0 auto;
         width: 100%;
-        color: #fff;
     }
     
-    header nav ul li:not(.active) a:hover {
-        border-radius: 3px;
-        border-bottom: none;
-        transition: all 100ms ease;
+    header nav ul li a:hover {
+        display: none;
     }
 
 }
