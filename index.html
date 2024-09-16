@@ -15,9 +15,9 @@
         <div class="bar">
 
         <header class="container">
-            <div class="menu">
+            <div class="menu-background">
                 <nav class="nav-menu">
-                <ul>
+                    <ul>
                         <li class="active"><a href="./index.html">Главная</a></li>
                         <li><a href="./menu.html">Меню</a></li>
                         <li><a href="#bar-foto">О нас</a></li>
@@ -173,9 +173,8 @@
         document.querySelector('.burger-menu').addEventListener('click', function() {
             this.classList.toggle('active');
             document.querySelector('.nav-menu').classList.toggle('active')
-            document.querySelector('body').classList.toggle('lock');
+            document.querySelector('html').classList.toggle('lock');
         })
     </script>
-    
 </body>
 </html>
