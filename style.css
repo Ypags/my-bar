@@ -188,10 +188,14 @@ header nav ul li.active::after {
     margin: 0 auto;
 }
 
-header nav ul li:not(.active) a:hover {
-    border-radius: 3px;
-    border-bottom: 4px solid #ffffff;
-    transition: all 100ms ease;
+@media (hover: hover) {
+
+    header nav ul li:not(.active) a:hover {
+        border-radius: 3px;
+        border-bottom: 4px solid #ffffff;
+        transition: all 100ms ease;
+    }
+
 }
 
 .burger-menu {
@@ -307,10 +311,7 @@ header nav ul li:not(.active) a:hover {
         display: block;
         height: 1px;
         width: 100%;
-    }
-    
-    header nav ul li a:hover {
-        display: none;
+        border-bottom: none;
     }
 
 }

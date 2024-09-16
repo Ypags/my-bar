@@ -20,8 +20,8 @@
                     <ul>
                         <li class="active"><a href="./index.html">Главная</a></li>
                         <li><a href="./menu.html">Меню</a></li>
-                        <li><a href=".#bar-foto">О нас</a></li>
-                        <li><a href=".#footer">Контакты</a></li>
+                        <li><a class="remove-burger-main" href=".#bar-foto">О нас</a></li>
+                        <li><a class="remove-burger-main" href=".#footer">Контакты</a></li>
                         <li><a href="./booking.html">Бронирования</a></li>
                     </ul>
                 </nav>
@@ -172,9 +172,10 @@
     <script>
         document.querySelector('.burger-menu').addEventListener('click', function() {
             this.classList.toggle('active');
-            document.querySelector('.nav-menu').classList.toggle('active')
+            document.querySelector('.nav-menu').classList.toggle('active');
             document.querySelector('html').classList.toggle('lock');
         })
     </script>
+    
 </body>
 </html>
