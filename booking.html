@@ -16,8 +16,8 @@
                     <ul>
                         <li><a href="./index.html">Главная</a></li>
                         <li><a href="./menu.html">Меню</a></li>
-                        <li><a href=".#bar-foto">О нас</a></li>
-                        <li><a href=".#footer">Контакты</a></li>
+                        <li><a class="remove-burger-main" href=".#bar-foto">О нас</a></li>
+                        <li><a class="remove-burger-main1" href="#footer">Контакты</a></li>
                         <li class="active"><a href="./booking.html">Бронирования</a></li>
                     </ul>
                 </nav>
@@ -161,6 +161,20 @@
             this.classList.toggle('active');
             document.querySelector('.nav-menu').classList.toggle('active');
             document.querySelector('html').classList.toggle('lock');
+        })
+    </script>
+    <script>
+        document.querySelector('.remove-burger-main').addEventListener('click', function() {
+            document.querySelector('.burger-menu').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+            document.querySelector('html').classList.remove('lock');
+        })
+    </script>
+    <script>
+        document.querySelector('.remove-burger-main1').addEventListener('click', function() {
+            document.querySelector('.burger-menu').classList.remove('active');
+            document.querySelector('.nav-menu').classList.remove('active');
+            document.querySelector('html').classList.remove('lock');
         })
     </script>
 

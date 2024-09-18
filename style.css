@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-html {
-    overflow-x: hidden;
-}
-
 
 *,
 ::before,
@@ -19,7 +15,7 @@ body {
 }
 
 .lock{
-    overflow: hidden;
+    overflow-y: hidden;
 }
  
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
@@ -53,13 +49,6 @@ img {
     max-width: 100%;
 }
  
-input,
-textarea,
-select,
-button {
-    font: inherit;
-}
- 
 html {
     height: 100%;
 }
@@ -76,13 +65,6 @@ body {
     color: #fff;
     min-height: 100%;
     line-height: 1.5;
-}
- 
-svg *[fill] { fill: currentColor }
-svg *[stroke] { stroke: currentColor }
-
-svg * {
-     transition-property: fill, stroke;
 }
  
 @media (prefers-reduced-motion: reduce) {
@@ -429,9 +411,13 @@ header nav ul li.active::after {
     font-weight: 700;
 }
 
-.bar .zakaz-stol .btn:hover {
+@media (hover: hover) {
+
+    .bar .zakaz-stol .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
+    }
+
 }
 
 /* Знаем все о коктейлях */
@@ -471,10 +457,14 @@ header nav ul li.active::after {
     font-size: 16px;
 }
 
-.cocktail .btn:hover {
+@media (hover: hover) {
+
+    .cocktail .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
-} 
+    }
+
+}
 
 /* Фото кафе */
 
@@ -574,29 +564,6 @@ header nav ul li.active::after {
     width: 350px;
 }
 
-@media (max-width: 600px) {
-    
-    .email {
-        margin-bottom: 200px;
-    }
-    
-    .email input {
-        width: 80vw;
-        margin-inline: auto;
-        margin-bottom: 15px;
-    }
-
-    .email .email-adress {
-        flex-direction: column;
-    }
-
-    .email button {
-        width: 80vw;
-        margin-inline: auto;
-    }
-
-}
-
 .email input::placeholder{
     color: #505050;
 }
@@ -618,9 +585,36 @@ header nav ul li.active::after {
     margin-left: 25px;
 }
 
-.email button:hover {
-    cursor: pointer;
-    background-color: #2b2026;
+@media (hover: hover) {
+
+    .email button:hover {
+        cursor: pointer;
+        background-color: #2b2026;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .email {
+        margin-bottom: 200px;
+    }
+    
+    .email input {
+        width: 80vw;
+        margin-inline: auto;
+        margin-bottom: 15px;
+    }
+
+    .email .email-adress {
+        flex-direction: column;
+    }
+
+    .email button {
+        width: 80vw;
+        margin-inline: auto;
+    }
+
 }
 
 /* ==========================Меню========================== */
@@ -790,7 +784,6 @@ header {
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 @media (max-width: 650px) {
@@ -815,7 +808,7 @@ header {
     min-width: 70px;
     max-width: 194px;
     height: 43px;
-    transition: all 300ms ease;
+    transition: all 0.3s ease;
 }
 
 .choose-time .blocks p:hover {
@@ -830,16 +823,19 @@ header {
     border: none;
     border-radius: 2px;
     display: block;
-    margin: 40px auto;
-    transition: all 500ms ease;
-    font-size: 14px;
+    margin: 30px auto;
+    transition: all 0.5s ease;
     font-weight: 700;
 }
 
-.choose-time button:hover {
-    cursor: pointer;
-    transform: scale(1.06);
-} 
+@media (hover: hover) {
+
+    .choose-time button:hover {
+        cursor: pointer;
+        transform: scale(1.06);
+    } 
+
+}
 
 iframe {
     margin-top: 150px;
@@ -893,8 +889,12 @@ footer .footer-info ul a {
     transition: all 0.6s ease;
 }
 
-footer .footer-info ul a:hover{
-    text-shadow: 0 0 7px #95751ccc;
+@media (hover: hover) {
+
+    footer .footer-info ul a:hover{
+        text-shadow: 0 0 7px #95751ccc;
+    }
+    
 }
 
 footer .footer-info ul li {
