@@ -24,7 +24,7 @@
         </div>
 
 
-        <div class="burger-menu burger-menu-black">
+        <div id="burger" class="burger-menu burger-menu-black">
             <span></span>
         </div>
     </header>
@@ -208,6 +208,18 @@
             document.querySelector('.nav-menu').classList.remove('active');
             document.querySelector('html').classList.remove('lock');
         })
+    </script>
+    <script>
+        const burger = document.querySelector("#burger");
+
+        window.addEventListener('scroll', e => {
+            if (pageYOffset >= 50) {
+                burger.classList.add("burger_hide");
+            } 
+            else {
+                burger.classList.remove("burger_hide");
+            }
+        });
     </script>
     
 </body>

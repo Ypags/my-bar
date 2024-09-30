@@ -28,7 +28,7 @@
             </div>
 
 
-            <div class="burger-menu">
+            <div id="burger" class="burger-menu">
                 <span></span>
             </div>
         </header>
@@ -111,19 +111,19 @@
 
             <section class="bar-foto" id="bar-foto">
                 <div class="blocks">
-                        <div class="block up">
-                            <img src="./img/index/bar-foto2.png" alt="">
-                            <img src="./img/index/bar-foto3.png" alt="">
-                            <img src="./img/index/bar-foto4.png" alt="">
-                        </div>
-                        <div class="block down">
-                            <article class="block bar-skidka">
-                                <h2>Скидки 30%</h2>
-                                <h3>КАЖДУЮ ПЯТНИЦУ</h3>
-                                <p>информация о данном событие бла бла бла бла бла бла бла бла</p>
-                            </article>
-                            <div class="block"><img src="./img/index/bar-foto1.png" alt=""></div>
-                        </div>
+                    <div class="up">
+                        <article class="block bar-skidka">
+                            <h2>Скидки 30%</h2>
+                            <h3>КАЖДУЮ ПЯТНИЦУ</h3>
+                            <p>информация о данном событие бла бла бла бла бла бла бла бла</p>
+                        </article>
+                        <img src="./img/index/bar-foto1.png" class="block" alt="">   
+                    </div>
+                    <div class="down">
+                        <img src="./img/index/bar-foto2.png" class="block" alt="">
+                        <img src="./img/index/bar-foto3.png" class="block" alt="">
+                        <img src="./img/index/bar-foto4.png" class="block block-5" alt="">
+                    </div>
                 </div> 
             </section>
             <div class="email">
@@ -189,6 +189,18 @@
             document.querySelector('.nav-menu').classList.remove('active');
             document.querySelector('html').classList.remove('lock');
         })
+    </script>
+    <script>
+        const burger = document.querySelector("#burger");
+
+        window.addEventListener('scroll', e => {
+            if (pageYOffset >= 50) {
+                burger.classList.add("burger_hide");
+            } 
+            else {
+                burger.classList.remove("burger_hide");
+            }
+        });
     </script>
     
 </body>
